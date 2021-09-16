@@ -48,7 +48,7 @@ This query fetches aggregated data from all Pancakeswap pairs and tokens, to cap
 
 ```graphql
 {
-  uniswapFactories(first: 50) {
+  ksfSwapFactories(first: 50) {
     pairCount
     totalVolumeUSD
     totalLiquidityUSD
@@ -57,7 +57,7 @@ This query fetches aggregated data from all Pancakeswap pairs and tokens, to cap
 ```
 ```price
 {
-  uniswapFactories(first: 50) {
+  ksfSwapFactories(first: 50) {
     id
     pairCount
     totalVolumeUSD
@@ -73,7 +73,7 @@ This query fetches aggregated data from all Pancakeswap pairs and tokens, to cap
 ```
 ```token
 {
-  uniswapFactories(first: 50) {
+  ksfSwapFactories(first: 50) {
     id
     pairCount
     totalVolumeUSD
@@ -91,7 +91,7 @@ This query fetches aggregated data from all Pancakeswap pairs and tokens, to cap
 ```Admin queries
 
 {
-  indexingStatuses(subgraphs: ["QmcV9bkvrRmkHZnHAHting59yVteUDbL3CheZYKYXwxtSm"]) {
+  indexingStatuses(subgraphs: ["QmXKNYHpgYYfdpR6DztvXymnjTLWqNLf39cNxF9GiRx8mH"]) {
     subgraph
     synced
     health
