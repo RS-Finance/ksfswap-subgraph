@@ -16,7 +16,7 @@ Make sure to update package.json settings to point to your own graph account.
 
 ## Queries
 
-Below are a few ways to show how to query the uniswap-subgraph for data. The queries show most of the information that is queryable, but there are many other filtering options that can be used, just check out the [querying api](https://thegraph.com/docs/graphql-api). These queries can be used locally or in The Graph Explorer playground.
+Below are a few ways to show how to query the uniswap-subgraph for data. The queries show most of the information that is queryable, but there are many other filtering options that can be used, just check out the [querying api](info.kucoinswap.finance/subgraphs/name/ksfswap/ksfswap). These queries can be used locally or in The Graph Explorer playground.
 
 ## Key Entity Overviews
 
@@ -48,7 +48,7 @@ This query fetches aggregated data from all Pancakeswap pairs and tokens, to cap
 
 ```graphql
 {
-  ksfSwapFactories(first: 50) {
+  ksfSwapFactories(first: 1) {
     pairCount
     totalVolumeUSD
     totalLiquidityUSD
@@ -57,14 +57,14 @@ This query fetches aggregated data from all Pancakeswap pairs and tokens, to cap
 ```
 ```price
 {
-  ksfSwapFactories(first: 50) {
+  ksfSwapFactories(first: 1) {
     id
     pairCount
     totalVolumeUSD
     totalVolumeKCS
   }
   
-  bundles(first: 50) {
+  bundles(first: 1) {
    id
     kcsPrice
   }
@@ -73,13 +73,13 @@ This query fetches aggregated data from all Pancakeswap pairs and tokens, to cap
 ```
 ```token
 {
-  ksfSwapFactories(first: 50) {
+  ksfSwapFactories(first: 1) {
     id
     pairCount
     totalVolumeUSD
     totalVolumeKCS
   }
-  tokens(first: 50) {
+  tokens(first: 1) {
     id
     symbol
     name
