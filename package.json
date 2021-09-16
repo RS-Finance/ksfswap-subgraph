@@ -1,0 +1,25 @@
+{
+  "name": "ksfswap-subgraph",
+  "version": "1.0.0",
+  "repository": "https://github.com/ksfSwap/ksfswap-subgraph",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen --output-dir src/types/",
+    "build": "graph build",
+    "create-mainnet": "graph create --node http://Info.kucoinswap.finance:8020 ksfswap/ksfswap",
+    "deploy-mainnet": "graph deploy ksfswap/ksfswap --ipfs http://Info.kucoinswap.finance:5001 --node http://Info.kucoinswap.finance:8020 --debug",
+    "create-testnet": "graph create --node http://Info.kucoinswap.finance:8020 ksfswap/ksfswap",
+    "deploy-temp": "graph deploy ksfnow --ipfs http://localhost:5001 --node http://127.0.0.1:8020 --debug",
+    "deploy-testnet": "graph deploy ksfswap/ksfswap --ipfs http://Info.kucoinswap.finance:5001 --node http://Info.kucoinswap.finance:8020 --debug"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.16.0",
+    "@graphprotocol/graph-ts": "^0.16.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  }
+}
