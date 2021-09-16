@@ -22,7 +22,7 @@ Below are a few ways to show how to query the uniswap-subgraph for data. The que
 
 #### UniswapFactory
 
-Contains data across all of KsfSwap v2. This entity tracks important things like total liquidity (in ETH and USD, see below), all time volume, transaction count, number of pairs and more.
+Contains data across all of KsfSwap v2. This entity tracks important things like total liquidity (in KCS and USD, see below), all time volume, transaction count, number of pairs and more.
 
 #### Token
 
@@ -61,12 +61,12 @@ This query fetches aggregated data from all Pancakeswap pairs and tokens, to cap
     id
     pairCount
     totalVolumeUSD
-    totalVolumeETH
+    totalVolumeKCS
   }
   
   bundles(first: 50) {
    id
-    ethPrice
+    kcsPrice
   }
 }
 
@@ -77,7 +77,7 @@ This query fetches aggregated data from all Pancakeswap pairs and tokens, to cap
     id
     pairCount
     totalVolumeUSD
-    totalVolumeETH
+    totalVolumeKCS
   }
   tokens(first: 50) {
     id
