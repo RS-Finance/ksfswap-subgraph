@@ -55,12 +55,7 @@ export function getKcsPriceInUSD(): BigDecimal {
 let WHITELIST: string[] = [
   '0x4446fc4eb47f2f6586f9faab68b3498f86c07521', // WKCS
   '0x980a5afef3d17ad98635f6c5aebcbaeded3c3430', // USDC
-  '0x0039f574ee5cc39bdd162e9a88e3eb1f111baf48', // USDT
-  '0xe3f5a90f9cb311505cd691a46596599aa1a0ad7d', // BUSD
-  '0x755d74d009f656ca1652cbdc135e3b6abfccc455', // KSF
-  '0x1bbd57143428452a4deb42519391a0a436481c8e', // RS
-  '0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c', // BNB
-  '0xc9baa8cfdde8e328787e29b4b078abf2dadc2055' // DAI
+  '0x0039f574ee5cc39bdd162e9a88e3eb1f111baf48'  // USDT
 ]
 
 // minimum liquidity required to count towards tracked volume for pairs with small # of Lps
